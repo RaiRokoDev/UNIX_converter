@@ -86,7 +86,9 @@ def main_window():
     utc_field = StringVar(window)
     utc_field.set('+00:00')
 
-    utc_list = OptionMenu(window, utc_field, '+12:00',
+    utc_list = OptionMenu(window, utc_field, '+14:00',
+                                             '+13:00',
+                                             '+12:00',
                                              '+11:00',
                                              '+10:00',
                                              '+09:00',
@@ -108,9 +110,7 @@ def main_window():
                                              '-07:00',
                                              '-08:00',
                                              '-09:00',
-                                             '-10:00',
-                                             '-11:00',
-                                             '-12:00')
+                                             '-10:00')
     utc_list['bg'] = 'grey13'
     utc_list['fg'] = 'white'
     utc_list.place(x=40, y=0)
